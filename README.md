@@ -32,3 +32,127 @@ A modern React application for tracking daily moods with weather integration. Fe
 ```bash
 git clone https://github.com/your-username/moodmate-app.git
 cd moodmate-app
+```
+
+2. **Install Dependencies**
+```bash
+npm install
+```
+
+3. **Configure Environment**
+```bash
+cp .env.example .env
+# Add your OpenWeather API key
+```
+
+4. **Start Development Server**
+```bash
+npm start
+```
+
+5. **Build for Production**
+```bash
+npm run build
+```
+
+## Core Components
+
+```javascript
+{
+  moodEntry: {
+    date: ISOString,    // Entry timestamp
+    mood: number,       // Selected mood ID (1-5)
+    note: string,       // User's journal note
+    weather: object     // Weather data from API
+  }
+}
+```
+
+## API Integration
+
+### OpenWeather API
+
+**Endpoint:**  
+`GET https://api.openweathermap.org/data/2.5/weather`
+
+**Required Parameters:**
+
+- `lat`: Latitude from geolocation  
+- `lon`: Longitude from geolocation  
+- `units`: metric (for Celsius)  
+- `appid`: Your API key
+
+## Key Components
+
+### MoodSelector.js
+- Displays 5 mood emoji options
+- Visual feedback on selection
+- Handles mood selection state
+
+### CalendarView.js
+- Monthly calendar layout
+- Dot indicators for logged days
+- Highlights current day
+
+### AllNotesView.js
+- Chronological note display
+- Weather data visualization
+- Responsive card layout
+
+## Project Structure
+
+```
+src/
+├── components/
+│   ├── Header.js
+│   ├── MoodSelector.js
+│   ├── NoteInput.js
+│   ├── WeatherDisplay.js
+│   ├── CalendarView.js
+│   ├── AllNotesView.js
+│   └── SaveButton.js
+├── constants/
+│   └── moods.js
+├── App.js
+└── index.js
+```
+
+## Implementation Details
+
+### Mood Tracking System
+- 5 emoji options with visual feedback
+- Dynamic background based on selected mood
+- Form validation before submission
+
+### Weather Integration
+- Automatic geolocation detection
+- Real-time weather data fetching
+- Weather emoji visualization
+
+### Data Persistence
+- LocalStorage for mood entries
+- Automatic data loading on startup
+- Entries sorted by date
+
+### Responsive Design
+- Mobile-first approach
+- Adaptive grid layouts
+- Consistent spacing and typography
+
+## Deployment
+
+Deployed using Netlify:  
+**Live Demo:** *Coming Soon*
+
+## Future Enhancements
+
+- Mood trend visualization
+- Dark mode toggle
+- PDF export functionality
+- Multi-language support
+
+## Acknowledgements
+
+- OpenWeather for free weather API  
+- Tailwind CSS for utility-first framework  
+- React documentation for component patterns
