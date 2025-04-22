@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/moodmate/static/css/main.204bf567.css",
+    "main.js": "/moodmate/static/js/main.b193df6e.js",
+    "static/js/453.84270865.chunk.js": "/moodmate/static/js/453.84270865.chunk.js",
+    "index.html": "/moodmate/index.html",
+    "main.204bf567.css.map": "/moodmate/static/css/main.204bf567.css.map",
+    "main.b193df6e.js.map": "/moodmate/static/js/main.b193df6e.js.map",
+    "453.84270865.chunk.js.map": "/moodmate/static/js/453.84270865.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.204bf567.css",
+    "static/js/main.b193df6e.js"
+  ]
+}
