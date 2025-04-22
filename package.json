@@ -1,9 +1,8 @@
-
-"homepage": "https://dnitish07.github.io/moodmate"
 {
   "name": "moodmate",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
+  "homepage": "https://dnitish07.github.io/moodmate",
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",

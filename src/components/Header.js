@@ -8,9 +8,11 @@ export default function Header() {
 
   return (
     <header className="mb-6">
-      <h1 className="text-2xl font-bold text-gray-800">MoodMate</h1>
-      <p className="text-gray-500 mt-1">{dateStr}</p>
-      <p className="text-gray-600 mt-4">How are you feeling today?</p>
+      <h1 className="text-3xl font-bold text-indigo-600">MoodMate</h1>
+      <p className="text-indigo-400 mt-1">{dateStr}</p>
+      <p className="text-gray-600 mt-6 text-lg font-medium">
+        How are you feeling today?
+      </p>
     </header>
   );
 }

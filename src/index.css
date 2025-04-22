@@ -2,6 +2,37 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  :root {
+    --color-primary: 79 70 229;
+    --color-secondary: 99 102 241;
+    --color-accent: 236 72 153;
+  }
+}
+
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, 
+    Ubuntu, Cantarell, sans-serif;
+  @apply bg-gray-50;
+}
+
+/* Custom card style */
+.card {
+  @apply bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  @apply shadow-md;
+}
+
+/* Custom button style */
+.btn-primary {
+  @apply bg-gradient-to-r from-indigo-500 to-indigo-600 text-white font-medium 
+         py-2.5 px-6 rounded-lg hover:shadow-md transition-all;
+}
+
+/* Mood selector buttons */
+.mood-btn {
+  @apply p-3 rounded-full text-3xl transition-all transform hover:scale-110;
 }

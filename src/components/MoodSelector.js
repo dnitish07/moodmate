@@ -5,13 +5,15 @@ export default function MoodSelector({ onSelect }) {
   const [selectedMood, setSelectedMood] = useState(null);
 
   return (
-    <div className="my-6">
+    <div className="my-8">
       <div className="flex justify-around">
         {moods.map(mood => (
           <button
             key={mood.id}
-            className={`p-3 rounded-full text-3xl ${mood.color} ${
-              selectedMood === mood.id ? 'ring-2 ring-gray-400' : ''
+            className={`mood-btn ${mood.color} ${
+              selectedMood === mood.id 
+                ? 'ring-4 ring-indigo-200 scale-110' 
+                : 'opacity-80 hover:opacity-100'
             }`}
             onClick={() => {
               setSelectedMood(mood.id);
